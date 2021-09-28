@@ -6,6 +6,9 @@ public class Main {
 	    Circle c = new Circle();
 	    c.set(2,3,5);
 	    System.out.println(c.returnCenter());
+	    System.out.println(c.area());
+	    System.out.println(c.circumference());
+	    System.out.println(c.overlapPoint(1,2));
     }
 }
 

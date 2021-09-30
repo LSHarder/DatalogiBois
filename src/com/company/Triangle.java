@@ -22,7 +22,7 @@ public class Triangle extends Shape {
     }
 
     public boolean overlapPoint(float x, float y) {
-        float x1 =this.x;
+        float x1 = this.x;
         float y1 = this.y;
         float x2 = this.x + this.width;
         float y2 = this.y;

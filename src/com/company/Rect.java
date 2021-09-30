@@ -3,18 +3,26 @@ package com.company;
 public class Rect extends Shape {
     float height;
     float width;
+    float size;
 
-    public Rect(){
-        this.height = this.size;
-        this.height = this.size;
+    public void set(float x, float y, float size) {
+        this.x = x;
+        this.y = y;
+        this.size = size;
+        this.height = size;
+        this.width = size;
     }
 
-    public boolean overlapPoint(float x, float y){
+    public boolean overlapPoint(float x, float y) {
         return x <= this.x + this.width && x >= this.x && y <= this.y + this.height && y >= this.y;
     }
 
-    public double area () {return (double)(this.height * this.width);}
+    public double area() {
+        return (this.height * this.width);
+    }
 
-    public double circumference(){return(double)(this*height * 2.0F * this.width * 2.0F);}
+    public double circumference() {
+        return (this.height * 2) + (this.width * 2);
+    }
 }
 

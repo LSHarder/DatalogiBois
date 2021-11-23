@@ -9,6 +9,7 @@ public class Main {
 	    System.out.println(c.area());
 	    System.out.println(c.circumference());
 	    System.out.println(c.overlapPoint(1,2));
+	    System.out.println(c.dist(1,2))
 		Rect r = new Rect();
 		r.set(4,6,10);
 		System.out.println(r.returnCenter());
